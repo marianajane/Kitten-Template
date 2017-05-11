@@ -1,0 +1,63 @@
+body {
+	margin: 0 auto;
+  	padding: 0 auto;
+  	width: 100%;
+  	max-width: 1200px;
+  	background-color: pink;
+}
+
+.container{
+  	width: 100%;
+  	margin: 0px auto;
+  	position: relative;
+  	display: flex;
+	justify-content: center;
+}
+
+.fondo {
+	width: 90%;
+	position: absolute;
+}
+
+.gatito {
+	margin-top: 15%; 
+	width: 50%;
+	position: absolute;
+}
+
+/*Responsive*/
+@media only screen and (max-width: 1200px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .fondo {
+    	content:url("../img/dawn.png");
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        background-color: orange;
+    }
+     .gatito {
+    	content:url("../img/kitten-large.png");
+    }
+}
+@media only screen and (max-width: 480px) {
+    body {
+        background-color: purple;
+    }
+     .fondo {
+    	content:url("../img/maxresdefault.jpg");
+    }
+     .gatito {
+    	content:url("../img/kitten-small.png");
+    	margin-top: 8%;
+    }
+}
+@media only screen and (max-width: 320px) {
+    body {
+        background-color: yellow;
+    }
+}
